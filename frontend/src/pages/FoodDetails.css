@@ -1,0 +1,198 @@
+.food-details-page {
+  min-height: 70vh;
+  padding: 50px 20px;
+  background-color: #f8f8f8;
+}
+
+.food-details-card {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 45px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.food-image-section {
+  width: 50%;
+  padding: 5px;
+  background-color: #fff5f2;
+  border-radius: 16px;
+}
+
+.food-image-section img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.food-info {
+  flex: 1;
+  padding: 15px 5px;
+}
+
+.food-info h1 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.food-rating {
+ display: flex;
+ align-items: center;
+ gap: 5px;
+ color: #16823a;
+ font-weight: 600;
+}
+
+.food-rating span {
+  color: #777;
+  font-weight: 400;
+}
+
+.food-info h2 {
+  color: #ff4d2d;
+  font-size: 25px;
+  margin-bottom: 18px;
+}
+
+.food-description {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.restaurant-name {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.add-to-cart-btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color:#ff4d2d;
+  font-size: 15px;
+  font-weight: 600;
+  border: 1px solid #ff4d2d;
+  box-shadow: 0 4px 10px rgba(255,77,45,0.2);
+}
+
+.add-to-cart-btn:hover{
+    background-color: #e63e22;
+    color: white;
+}
+
+.quantity-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.quantity-section > span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+}
+
+.quantity-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.quantity-box button {
+  width: 34px;
+  height: 34px;
+  border: none;
+  background-color: #fff5f2;
+  color: #ff4d2d;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.quantity-box span {
+  width: 35px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.delivery-info {
+  display: flex;
+  gap: 25px;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #eeeeee;
+}
+
+.delivery-info div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.delivery-info strong {
+  font-size: 13px;
+  color: #333;
+}
+
+.delivery-info span {
+  font-size: 11px;
+  color: #888;
+}
+.delivery-info > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.delivery-info svg {
+  margin-bottom: 3px;
+}
+.related-foods {
+  max-width: 1000px;
+  margin: 40px auto 0;
+}
+
+.related-foods h2 {
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+.related-food-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.related-food-card {
+  padding: 12px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.related-food-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 9px;
+}
+
+.related-food-card h3 {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.related-food-card p {
+  margin-top: 5px;
+  color: #ff4d2d;
+  font-weight: 600;
+}

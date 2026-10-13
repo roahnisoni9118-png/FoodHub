@@ -1,0 +1,316 @@
+.cart-page {
+  min-height: 70vh;
+  padding: 40px 20px 60px;
+  background-color: #f8f8f8;
+}
+
+.cart-page > h1 {
+  max-width: 1000px;
+  margin: 0 auto 25px;
+  font-size: 28px;
+  color: #222222;
+}
+
+.cart-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 25px;
+}
+
+
+/* =========================
+   CART ITEMS
+========================= */
+
+.cart-items,
+.cart-summary {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.cart-item img {
+  width: 100px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cart-item-info {
+  flex: 1;
+}
+
+.cart-item-info h3 {
+  font-size: 17px;
+  color: #222222;
+  margin-bottom: 5px;
+}
+
+.cart-item-info p {
+  font-size: 13px;
+  color: #777777;
+  margin-bottom: 8px;
+}
+
+.cart-item-info span {
+  color: #ff4d2d;
+  font-weight: 600;
+}
+
+
+/* =========================
+   QUANTITY
+========================= */
+
+.cart-quantity {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dddddd;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.cart-quantity button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: #fff5f2;
+  color: #ff4d2d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-quantity span {
+  width: 32px;
+  text-align: center;
+  font-size: 14px;
+}
+
+
+/* =========================
+   REMOVE
+========================= */
+
+.remove-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  background: none;
+  color: #e63e22;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.remove-btn:hover {
+  color: #c83219;
+}
+
+
+/* =========================
+   DELIVERY ADDRESS
+========================= */
+
+.delivery-address {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #eeeeee;
+}
+
+.address-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.address-header h2 {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 18px;
+  color: #222222;
+}
+
+.address-header h2 svg {
+  color: #ff4d2d;
+}
+
+.address-header button {
+  border: none;
+  background: none;
+  color: #ff4d2d;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.address-card {
+  padding: 15px;
+  border: 1px solid #eeeeee;
+  border-radius: 9px;
+  background-color: #fffaf8;
+}
+
+.address-card h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: #222222;
+}
+
+.address-card p {
+  color: #777777;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* =========================
+   BILL SUMMARY
+========================= */
+
+.cart-summary h2 {
+  font-size: 20px;
+  color: #222222;
+}
+
+
+/* =========================
+   COUPON
+========================= */
+
+.coupon-section {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.coupon-section input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 7px;
+  outline: none;
+  font-size: 13px;
+}
+
+.coupon-section input:focus {
+  border-color: #ff4d2d;
+}
+
+.coupon-section button {
+  padding: 0 14px;
+  border: 1px solid #ff4d2d;
+  border-radius: 7px;
+  background-color: #ffffff;
+  color: #ff4d2d;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.coupon-section button:hover {
+  background-color: #fff5f2;
+}
+
+
+/* =========================
+   BILL DETAILS
+========================= */
+
+.bill-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+  color: #666666;
+  font-size: 14px;
+}
+
+
+/* =========================
+   TOTAL
+========================= */
+
+.bill-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid #eeeeee;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   CHECKOUT
+========================= */
+
+.checkout-btn {
+  width: 100%;
+  margin-top: 25px;
+  padding: 13px;
+  border: none;
+  border-radius: 9px;
+  background-color: #ff4d2d;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.checkout-btn:hover {
+  background-color: #e63e22;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .cart-page {
+    padding: 30px 15px 40px;
+  }
+
+  .cart-page > h1 {
+    font-size: 24px;
+  }
+
+  .cart-container {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-summary {
+    width: 100%;
+  }
+
+  .cart-item {
+    flex-wrap: wrap;
+  }
+
+  .cart-item-info {
+    min-width: 150px;
+  }
+
+  .cart-quantity {
+    margin-left: 118px;
+  }
+
+  .remove-btn {
+    margin-left: auto;
+  }
+
+}

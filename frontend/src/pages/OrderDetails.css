@@ -1,0 +1,254 @@
+.order-details-page {
+  min-height: 70vh;
+  padding: 40px 20px 60px;
+  background-color: #f8f8f8;
+}
+
+.order-details-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.order-details-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.order-details-header h1 {
+  font-size: 28px;
+  color: #222222;
+  margin-bottom: 4px;
+}
+
+.order-details-header p {
+  color: #888888;
+  font-size: 13px;
+}
+
+.order-details-status {
+  padding: 7px 13px;
+  border-radius: 20px;
+  background-color: #e9f8ed;
+  color: #16823a;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.order-details-card {
+  margin-bottom: 20px;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.order-details-card h2 {
+  font-size: 19px;
+  color: #222222;
+  margin-bottom: 18px;
+}
+
+
+/* =========================
+   RESTAURANT
+========================= */
+
+.restaurant-location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #777777;
+  font-size: 13px;
+}
+
+.restaurant-location svg {
+  color: #ff4d2d;
+}
+
+
+/* =========================
+   ORDERED ITEM
+========================= */
+
+.ordered-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.ordered-item img {
+  width: 90px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 9px;
+}
+
+.ordered-item-info {
+  flex: 1;
+}
+
+.ordered-item-info h3 {
+  font-size: 16px;
+  color: #222222;
+  margin-bottom: 5px;
+}
+
+.ordered-item-info p {
+  color: #888888;
+  font-size: 12px;
+}
+
+.ordered-item > strong {
+  color: #ff4d2d;
+  font-size: 15px;
+}
+
+
+/* =========================
+   STATUS TIMELINE
+========================= */
+
+.status-timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 15px;
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 25px;
+  width: 1px;
+  height: calc(100% - 10px);
+  background-color: #dddddd;
+}
+
+.timeline-icon {
+  width: 21px;
+  height: 21px;
+  flex-shrink: 0;
+  color: #16823a;
+  background-color: #e9f8ed;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.timeline-item h3 {
+  font-size: 14px;
+  color: #222222;
+  margin-bottom: 4px;
+}
+
+.timeline-item p {
+  color: #888888;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+
+/* =========================
+   DELIVERY ADDRESS
+========================= */
+
+.delivery-address-details {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 15px;
+  border: 1px solid #eeeeee;
+  border-radius: 9px;
+  background-color: #fffaf8;
+}
+
+.delivery-address-details > svg {
+  color: #ff4d2d;
+  flex-shrink: 0;
+}
+
+.delivery-address-details h3 {
+  font-size: 14px;
+  color: #222222;
+  margin-bottom: 5px;
+}
+
+.delivery-address-details p {
+  color: #777777;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+
+/* =========================
+   BILL
+========================= */
+
+.bill-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  color: #666666;
+  font-size: 13px;
+}
+
+.bill-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid #eeeeee;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+  .order-details-page {
+    padding: 30px 15px 40px;
+  }
+
+  .order-details-header h1 {
+    font-size: 24px;
+  }
+
+  .order-details-card {
+    padding: 20px;
+  }
+
+  .ordered-item img {
+    width: 75px;
+    height: 70px;
+  }
+
+}

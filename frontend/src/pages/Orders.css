@@ -1,0 +1,207 @@
+.orders-page {
+  min-height: 70vh;
+  padding: 40px 20px 60px;
+  background-color: #f8f8f8;
+}
+
+.orders-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.orders-container > h1 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #222222;
+}
+
+
+/* =========================
+   ORDER CARD
+========================= */
+
+.order-card {
+  margin-bottom: 20px;
+  padding: 22px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.order-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.order-header h2 {
+  font-size: 18px;
+  color: #222222;
+  margin-bottom: 4px;
+}
+
+.order-header p {
+  color: #888888;
+  font-size: 12px;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.order-status {
+  padding: 6px 11px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.order-status.delivered {
+  background-color: #e9f8ed;
+  color: #16823a;
+}
+
+.order-status.preparing {
+  background-color: #fff4df;
+  color: #c47700;
+}
+
+
+/* =========================
+   ORDER CONTENT
+========================= */
+
+.order-content {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px 0;
+}
+
+.order-content img,
+.order-placeholder {
+  width: 90px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 9px;
+}
+
+.order-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff5f2;
+  font-size: 38px;
+}
+
+.order-info {
+  flex: 1;
+}
+
+.order-info h3 {
+  font-size: 16px;
+  color: #222222;
+  margin-bottom: 5px;
+}
+
+.order-info > p {
+  color: #888888;
+  font-size: 12px;
+  margin-bottom: 9px;
+}
+
+.order-meta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #666666;
+  font-size: 12px;
+}
+
+.order-meta span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.order-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+  border-top: 1px solid #eeeeee;
+}
+
+.order-footer > span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #777777;
+  font-size: 12px;
+}
+
+.order-footer > span svg {
+  color: #ff4d2d;
+}
+
+.order-footer a {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  color: #ff4d2d;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+  .orders-page {
+    padding: 30px 15px 40px;
+  }
+
+  .orders-container > h1 {
+    font-size: 24px;
+  }
+
+  .order-card {
+    padding: 18px;
+  }
+
+  .order-header h2 {
+    font-size: 16px;
+  }
+
+  .order-content img,
+  .order-placeholder {
+    width: 75px;
+    height: 70px;
+  }
+
+  .order-footer {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .order-footer > span {
+    max-width: 55%;
+  }
+
+}

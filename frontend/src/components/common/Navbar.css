@@ -1,0 +1,134 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 60px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.navbar-brand img{
+    height: 55px;
+    width: auto;
+}
+
+.navbar-brand a {
+  color: #222222;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 42px;
+  padding: 0 16px;
+  gap: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.navbar-search svg {
+  color: #777777;
+  flex-shrink: 0;
+}
+
+.navbar-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #333333;
+}
+
+.navbar-search input::placeholder {
+  color: #999999;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-icon-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222222;
+}
+.login-link{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222222;
+}
+
+
+.nav-action{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-right: 24px;
+    border-right: 2px solid rgb(173, 168, 168);
+}
+
+.register-btn {
+  padding: 12px 22px;
+  border-radius: 9px;
+  background-color: #ff4d2d;
+  color: #ffffff !important;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.register-btn:hover {
+  background-color: #e63e22;
+}
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 8px 20px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .navbar-brand img {
+    height: 55px;
+  }
+
+  .navbar-search {
+    order: 3;
+    width: 100%;
+  }
+
+  .navbar-links {
+    gap: 12px;
+  }
+
+  .nav-action {
+    gap: 12px;
+    padding-right: 12px;
+  }
+
+  .nav-icon-link span {
+    font-size: 12px;
+  }
+
+  .register-btn {
+    padding: 9px 14px;
+    font-size: 14px;
+  }
+}

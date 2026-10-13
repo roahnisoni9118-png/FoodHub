@@ -1,0 +1,268 @@
+.address-page {
+  min-height: 70vh;
+  padding: 40px 20px 60px;
+  background-color: #f8f8f8;
+}
+
+.address-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.address-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.address-header h1 {
+  font-size: 28px;
+  color: #222222;
+  margin-bottom: 4px;
+}
+
+.address-header p {
+  color: #888888;
+  font-size: 13px;
+}
+
+.add-address-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 11px 16px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #ff4d2d;
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.add-address-btn:hover {
+  background-color: #e63e22;
+}
+
+
+/* =========================
+   ADDRESS LIST
+========================= */
+
+.address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+
+/* =========================
+   SAVED ADDRESS CARD
+========================= */
+
+.saved-address-card {
+  padding: 22px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.saved-address-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.address-type {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.address-type-icon {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 9px;
+
+  background-color: #fff5f2;
+  color: #ff4d2d;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.address-type h2 {
+  font-size: 16px;
+  color: #222222;
+  margin-bottom: 3px;
+}
+
+.address-type span {
+  color: #16823a;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+
+/* =========================
+   ACTIONS
+========================= */
+
+.address-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.address-actions button {
+  width: 34px;
+  height: 34px;
+
+  border: 1px solid #eeeeee;
+  border-radius: 7px;
+
+  background-color: #ffffff;
+  color: #666666;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.address-actions button:hover {
+  color: #ff4d2d;
+  border-color: #ff4d2d;
+}
+
+.address-actions button:last-child:hover {
+  color: #e63e22;
+  border-color: #e63e22;
+}
+
+
+/* =========================
+   ADDRESS DETAILS
+========================= */
+
+.saved-address-details {
+  padding-top: 17px;
+}
+
+.saved-address-details p {
+  margin-bottom: 7px;
+  color: #666666;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.saved-address-details p:first-child {
+  color: #333333;
+  font-weight: 600;
+}
+
+.saved-address-details p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================
+   ADD ADDRESS CARD
+========================= */
+
+.add-address-card {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  padding: 20px;
+
+  border: 1px dashed #ff4d2d;
+  border-radius: 12px;
+
+  background-color: #ffffff;
+  color: #222222;
+
+  text-align: left;
+}
+
+.add-address-card:hover {
+  background-color: #fffaf8;
+}
+
+.add-address-icon {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 9px;
+
+  background-color: #fff5f2;
+  color: #ff4d2d;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-address-card div:nth-child(2) {
+  flex: 1;
+}
+
+.add-address-card h2 {
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+
+.add-address-card p {
+  color: #888888;
+  font-size: 12px;
+}
+
+.add-address-card > svg {
+  color: #ff4d2d;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+  .address-page {
+    padding: 30px 15px 40px;
+  }
+
+  .address-header {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .address-header h1 {
+    font-size: 24px;
+  }
+
+  .add-address-btn {
+    padding: 9px 12px;
+    white-space: nowrap;
+  }
+
+  .saved-address-card {
+    padding: 18px;
+  }
+
+}
