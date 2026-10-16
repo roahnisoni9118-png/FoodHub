@@ -15,8 +15,8 @@ const app = express()
 
 // Middleware
 app.use(express.json())
-app.use('/api/users',typeof userRoutes)
-app.use('/api/restaurants',typeof restaurantRoutes)
+app.use('/api/users', userRoutes)
+app.use('/api/restaurants', restaurantRoutes)
 
 // User Register
 app.post('/api/auth/register', async (req, res) => {

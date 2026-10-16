@@ -170,7 +170,6 @@ function Home() {
         <div className="food-list">
 
           <div className="food-card">
-            <div className="food-image"></div>
 
             <div className="food-info">
               <h3>Chicken Biryani</h3>
@@ -180,7 +179,6 @@ function Home() {
           </div>
 
           <div className="food-card">
-            <div className="food-image"></div>
 
             <div className="food-info">
               <h3>Margherita Pizza</h3>
@@ -190,7 +188,6 @@ function Home() {
           </div>
 
           <div className="food-card">
-            <div className="food-image"></div>
 
             <div className="food-info">
               <h3>Cheese Burger</h3>
@@ -200,7 +197,6 @@ function Home() {
           </div>
 
           <div className="food-card">
-            <div className="food-image"></div>
 
             <div className="food-info">
               <h3>Paneer Tikka</h3>
